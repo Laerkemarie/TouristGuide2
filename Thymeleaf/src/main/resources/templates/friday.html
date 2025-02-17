@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+  <meta charset="UTF-8">
+  <title>Is it friday?</title>
+</head>
+<body>
+<h1>Is it friday?</h1>
+
+<p th:if="${weekday == 'FRIDAY'}" > It's friday! Yay!</p>
+<p th:unless="${weekday == 'FRIDAY'}" > It's not friday yet! It's <span th:text="${weekday}"> </span> </p>
+</body>
+</html>

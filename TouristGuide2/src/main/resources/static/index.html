@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourist Guide</title>
+    <style>
+        body{background-color: aliceblue;}
+
+        h1{color: black; text-align: center;}
+
+        footer{position: fixed; bottom: 10px; text-align: center;}
+
+        nav{text-align: center}
+
+        .center {display: block; margin-left: auto; margin-right: auto; width: 50%;}
+
+        .attraction{ color: black; margin: 20px;}
+    </style>
+
+    <nav>
+        <a href="/">
+            <button>Home</button>
+        </a>
+        <a href="attractions">
+            <button>Show all attractions</button>
+        </a>
+    </nav>
+</head>
+
+
+<body>
+    <h1>Welcome to the Tourist Guide</h1>
+
+    <img src="tivoli.jpg" alt="tivoli" class="center">
+
+    <h2>Choose specific attraction:</h2>
+
+    <ul>
+        <li><div class="attraction">
+            <a href="/attractions/tivoli">Tivoli</a>
+        </div></li>
+        <li><div class="attraction">
+            <a href="/attractions/eiffeltårnet">Eiffeltårnet</a>
+        </div></li>
+        <li><div class="attraction">
+            <a href="/attractions/zoo">Zoo</a>
+        </div></li>
+    </ul>
+
+    <footer>
+        <p>Contact us: tourist@guide.com</p>
+    </footer>
+
+</body>
+</html>

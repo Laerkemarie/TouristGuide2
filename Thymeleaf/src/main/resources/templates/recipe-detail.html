@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Ingredients</title>
+</head>
+<body>
+<h1 th:text="${recipe.name}"></h1>
+<ul>
+    <li th:each="ingredient : ${recipe.ingredients}">
+        <span th:text="${ingredient.name}" th:classappend="${ingredient.allergen} ? 'allergen' : ''"></span>
+    </li>
+</ul>
+<a href="/">Back to recipe list</a>
+</body>
+</html>

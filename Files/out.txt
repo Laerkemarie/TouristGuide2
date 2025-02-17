@@ -1,0 +1,12 @@
+This is my first line in my output file
+This is my second line in my output file
+5
+3
+5
+5
+4
+2
+4
+4
+2
+2

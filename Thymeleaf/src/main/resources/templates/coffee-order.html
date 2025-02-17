@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Order</title>
+</head>
+<body>
+    <h1>Order your coffee!</h1>
+
+    <form action="#" th:action="@{/order}" th:object="${coffeeOrder}" method="post">
+        <label for="coffeeType">Coffe Type:</label>
+        <select id="coffeeType" name="coffeeType" th:field="*{coffeeType}">
+            <option th:each="type : ${coffeeTypes}" th:value="${type}" th:text="${type.displayName}">Coffee Type</option>
+        </select>
+        <br><br>
+
+        <label for="milkType">Milk Type:</label>
+        <select id="milkType" name="milkType" th:field="*{milkType}">
+            <option th:each="milk : ${milkTypes}" th:value="${milk}" th:text="${type.displayName}">Milk Type</option>
+        </select>
+        <br><br>
+
+        <label for="size">Size:</label>
+        <div id="size" th:each="size : ${sizes}">
+            <input type="radio" th:field="*{size}" th:value="${size}" /> <span th:text="${size.displayName}" ></span>
+        </div>
+        <br><br>
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
