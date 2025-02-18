@@ -1,4 +1,0 @@
-Dette er linje 1
-Dette er linje 2
-Dette er linje 3
-Dette er linje 4

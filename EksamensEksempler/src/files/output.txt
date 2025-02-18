@@ -1,4 +1,0 @@
-Dette er første linje
-Dette er anden linje
-Dette er tredje linje
-Farvel :)

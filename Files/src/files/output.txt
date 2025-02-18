@@ -1,3 +1,0 @@
-Dette er den første linje i filen.
-Dette er den anden linje.
-Farvel!
